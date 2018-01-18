@@ -279,7 +279,17 @@ header.masthead p {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
 
+.alert-success {
+  color: #fff !important;
+  background-color: #D83614 !important;
+  border: none;
+}
+
 html.rtl {
   direction: rtl;
+}
+
+#contact-us-success-alert {
+  z-index: 1000;
 }
 /*# sourceMappingURL=creative.css.map */

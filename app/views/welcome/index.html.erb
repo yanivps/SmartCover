@@ -27,6 +27,14 @@
   </head>
 
   <body id="page-top">
+
+    <% if flash[:contact_us_result] %>
+      <div id="contact-us-success-alert" style="position: fixed; top: 57px; left: 0; width: 100%;">
+        <div class="alert alert-success" style="text-align: center;">
+          <div><%= flash[:contact_us_result] %></div>
+        </div>
+      </div>
+    <% end %>
     
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
