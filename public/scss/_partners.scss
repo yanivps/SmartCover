@@ -1,0 +1,21 @@
+// Styling for the partners section
+#partners {
+  padding: 4rem 0;
+  border-top: 1px #E6E6E6 solid;
+
+  @media (min-width: 992px) {
+    img.partner-logo {
+      padding: 0 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    img.partner-logo {
+      padding: 10px 40px;
+    }
+  }
+  @media (max-width: 576px) {
+    img.partner-logo {
+      padding: 0 20px;
+    }
+  }
+}
