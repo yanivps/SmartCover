@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
 
     if to_email.is_a?(Hash)
       to_email_str = to_email[:to_email]
+      cc = to_email[:cc]
       bcc = to_email[:bcc]
     else
       to_email_str = to_email
@@ -18,6 +19,7 @@ class ApplicationController < ActionController::Base
     content = Content.new(type: 'text/html', value: "<html><body>#{body}</body></html>")
     personalization = Personalization.new
     personalization.add_to(to)
+    personalization.add_cc(Email.new(email: cc)) if cc
     personalization.add_bcc(Email.new(email: bcc)) if bcc
 
     mail = Mail.new

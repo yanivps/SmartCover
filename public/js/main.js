@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   $(function () {
-    $("#contact-us-success-alert").fadeTo(1500, 500).slideUp(500);
+    $("#contact-us-success-alert").fadeTo(2500, 500).slideUp(500);
   });
 
   $(function () {
