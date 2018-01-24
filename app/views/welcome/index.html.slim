@@ -38,6 +38,9 @@ html lang="#{[:en, :he].include?(I18n.locale) ? I18n.locale.to_s : 'he'}" class=
               a.nav-link.js-scroll-trigger href="#partners"  = t('.partners')
             li.nav-item
               a.nav-link.js-scroll-trigger href="#contact"  = t('.contact')
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link.js-scroll-trigger href="#{I18n.locale == :he ? '/?lang=en' : '/'}"  = I18n.locale == :he ? 'English' : 'עברית'
     header.masthead.text-center.text-white.d-flex
       .container.my-auto
         .row
