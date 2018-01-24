@@ -1,0 +1,10 @@
+#contact-us-form button {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+html.rtl {
+    #contact-us-form {
+        text-align: right
+    }
+}

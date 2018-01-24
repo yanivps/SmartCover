@@ -249,6 +249,15 @@ header.masthead p {
   }
 }
 
+#contact-us-form button {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+html.rtl #contact-us-form {
+  text-align: right;
+}
+
 .text-primary {
   color: #F05F40 !important;
 }
@@ -291,5 +300,9 @@ html.rtl {
 
 #contact-us-success-alert {
   z-index: 1000;
+}
+
+button {
+  cursor: pointer;
 }
 /*# sourceMappingURL=creative.css.map */

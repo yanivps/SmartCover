@@ -1,0 +1,46 @@
+---
+he:
+  welcome:
+    index:
+      title: Smart Cover
+      brand_name: Smart Cover
+      about: אודות
+      services: שירותים
+      partners: שותפים
+      contact: צור קשר
+      get_started: בוא נתחיל!
+      find_out_more: למידע נוסף
+      find_you_people: פותרים לך בעיות
+      bring_you_opportunities: מביאים אליך הזדמנויות
+      smart_cover_can_help: "המומחיות שלנו הקמת מערך בדיקות ידניות באתרים, ומובייל 
+        רישום מסמכי STP,STD ,ניהול מערכת תקלות ותיעודם"
+      about_us_header: יש לנו את מה שאתה צריך!
+      about_us_text: "בעלי ניסיון הקמה בחברות :
+        redalert ,cybergym ,salient eye
+        תוך כדי שמירת נהלי עבודה ברורים מול צוותי הפיתוח וכתיבתם"
+      at_your_service: לשירותך
+      find_people: הקמת מערך בדיקות
+      find_people_text: בדיקות ידניות מקיפות בכל סוגי המערכות
+      connect_you: עבודה בצורה הכי נכונה עם הצוות 
+      connect_you_text: אבחון מצב חברה ומתן יעוץ איך לפתור את הבעיות בכל תחומי ההיי-טק
+      up_to_date: "תהליכי ניתוח ובקרה"
+      up_to_date_text: ניתוח תקלות וממה הן נגרמות בצד קליינט ושרת
+      made_with_love: קשובים ללקוח תמיד
+      made_with_love_text: בדרך לעוד לקוח מרוצה
+      our_partners: שותפים
+      let_s_get_in: צור קשר!
+      ready_to_start_your: ""
+      email_address: smartmerge00@gmail.com
+      phone_number: "052-6688360"
+      phone_number_owner: "מיכאל"
+      form_name: שם
+      form_phone: טלפון
+      form_email_address: כתובת אימייל
+      form_company_name: חברה
+      form_company_website: אתר החברה
+      form_anything_else_you_would_like_us_to_know: דברים נוספים שתרצה לספר לנו
+      please_provide_a_valid_name: יש להכניס שם
+      please_provide_a_valid_email: יש להכניס כתובת אימייל
+      please_provide_a_valid_phone_number: יש להכניס מספר טלפון (10 ספרות)
+      for_example_9108087735454_or: 'לדוגמא: +9108087735454 או 0524343123'
+      submit: "שלח"

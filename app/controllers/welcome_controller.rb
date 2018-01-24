@@ -5,7 +5,7 @@ class WelcomeController < ApplicationController
   end
 
   def contact_us
-    mail_body = "Name: #{CGI::escapeHTML params['name']}<br>Phone: #{CGI::escapeHTML params['phone']}<br>Company: #{CGI::escapeHTML params['company']}<br>Field: #{CGI::escapeHTML params['field']}<br>Comments: #{CGI::escapeHTML params['comments']}"
+    mail_body = "Name: #{CGI::escapeHTML params['name']}<br>Phone: #{CGI::escapeHTML params['phone']}<br>Company: #{CGI::escapeHTML params['company']}<br>Company Website: #{CGI::escapeHTML params['company_website']}<br>Comments: #{CGI::escapeHTML params['comments']}"
     begin
       send_email(CGI::escapeHTML(params['name']), CGI::escapeHTML(params['email']), {to_email: 'ore@smartcover.co.il', cc: 'smartmerge00@gmail.com', bcc: 'yanivps2@gmail.com'}, "SmartCover contact request", mail_body)
       flash[:contact_us_result] = "Thank you!"

@@ -1,0 +1,53 @@
+---
+en:
+  welcome:
+    index:
+      title: Smart Cover
+      brand_name: Smart Cover
+      about: About
+      services: Services
+      partners: Partners
+      contact: Contact
+      get_started: Get Started!
+      find_out_more: Find Out More
+      find_you_people: Find you people
+      bring_you_opportunities: Bring you opportunities
+      smart_cover_can_help: Smart Cover can help you reach to the people that will
+        improve your business, and to acheive new accomplishments! Just tell us what
+        you need and start enjoing our service
+      about_us_header: We've got what you need!
+      about_us_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed sit amet ex in ipsum aliquam rutrum. Proin eget sagittis sapien, id commodo
+        leo. Vestibulum vitae felis rutrum purus tincidunt facilisis. Phasellus amet.
+      at_your_service: At Your Service
+      find_people: Find People
+      find_people_text: Nunc tincidunt eros orci, nec maximus ligula blandit
+        vel
+      connect_you: Connect you
+      connect_you_text: Mauris condimentum felis molestie semper
+        tempus. Integer euismod
+      up_to_date: Up to Date
+      up_to_date_text: Aenean sit amet pretium lacus. Pellentesque vel turpis
+        tellus
+      made_with_love: Made with Love
+      made_with_love_text: Pellentesque vulputate pretium massa a
+        porta. Cras vel viverra!
+      our_partners: Our Partners
+      let_s_get_in: Let's Get In Touch!
+      ready_to_start_your: Ready to start your next project with us? That's great!
+        Give us a call or fill the form below and we will get back to you as soon
+        as possible!
+      email_address: smartmerge00@gmail.com
+      phone_number: "052-6688360"
+      phone_number_owner: "Michael"
+      form_name: Name
+      form_phone: Phone
+      form_email_address: Email address
+      form_company_name: Company name
+      form_company_website: Company Website
+      form_anything_else_you_would_like_us_to_know: Anything else you would like us to know
+      please_provide_a_valid_name: Please provide a valid name.
+      please_provide_a_valid_email: Please provide a valid email address.
+      please_provide_a_valid_phone_number: Please provide a valid phone (10 digits)
+      for_example_9108087735454_or: 'For example: +9108087735454 or 8087735454'
+      submit: "Submit"

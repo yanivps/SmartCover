@@ -5,6 +5,7 @@
 @import "_masthead.scss";
 @import "_services.scss";
 @import "_partners.scss";
+@import "_contact-us.scss";
 @import "_bootstrap-overrides.scss";
 
 html.rtl {
@@ -13,4 +14,8 @@ html.rtl {
 
 #contact-us-success-alert {
     z-index: 1000;
+}
+
+button {
+    cursor: pointer
 }

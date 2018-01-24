@@ -1,10 +1,16 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
+  before_action :set_locale
+
+  SUPPORTED_LANGUAGES = ['en', 'he']
+  RIGHT_TO_LEFT_LANGUAGES = ['he']
+  def set_locale
+    SUPPORTED_LANGUAGES.include?(params[:lang]) ? I18n.locale = params[:lang] : I18n.locale = :he
+  end
+
   require 'sendgrid-ruby'
   include SendGrid
-
-
   def send_email(from_name, from_email, to_email, subject, body)
 
     if to_email.is_a?(Hash)
