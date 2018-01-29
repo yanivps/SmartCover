@@ -38,6 +38,9 @@ html lang="#{[:en, :he].include?(I18n.locale) ? I18n.locale.to_s : 'he'}" class=
               a.nav-link.js-scroll-trigger href="#partners"  = t('.partners')
             li.nav-item
               a.nav-link.js-scroll-trigger href="#contact"  = t('.contact')
+            - if I18n.locale == :he
+              li.nav-item
+                a.nav-link.js-scroll-trigger href="#faq"  = t('.faq')
           ul.navbar-nav
             li.nav-item
               a.nav-link.js-scroll-trigger href="#{I18n.locale == :he ? '/?lang=en' : '/'}"  = I18n.locale == :he ? 'English' : 'עברית'
@@ -52,7 +55,7 @@ html lang="#{[:en, :he].include?(I18n.locale) ? I18n.locale.to_s : 'he'}" class=
                 = t('.bring_you_opportunities')
             hr/
           .col-lg-8.mx-auto
-            p.text-faded.mb-5= t('.smart_cover_can_help')
+            p#secondary-header.ltr.text-white.mb-5= raw t('.smart_cover_can_help')
             a.btn.btn-primary.btn-xl.js-scroll-trigger href="#about"  = t('.find_out_more')
     section#about.bg-primary
       .container
@@ -60,7 +63,7 @@ html lang="#{[:en, :he].include?(I18n.locale) ? I18n.locale.to_s : 'he'}" class=
           .col-lg-8.mx-auto.text-center
             h2.section-heading.text-white= t('.about_us_header')
             hr.light.my-4/
-            p.text-faded.mb-4
+            p.text-faded.mb-4.h4
               = t('.about_us_text')
             a.btn.btn-light.btn-xl.js-scroll-trigger href="#services"  = t('.get_started')
     section#services
@@ -73,18 +76,17 @@ html lang="#{[:en, :he].include?(I18n.locale) ? I18n.locale.to_s : 'he'}" class=
         .row
           .col-lg-3.col-md-6.text-center
             .service-box.mt-5.mx-auto
-              i.fa.fa-4x.fa-cog.text-primary.mb-3.sr-icons
+              i.fa.fa-4x.fa-users.text-primary.mb-3.sr-icons
               h3.mb-3= t('.find_people')
-              / =raise 'bla'
               p.text-muted.mb-0= t('.find_people_text')
           .col-lg-3.col-md-6.text-center
             .service-box.mt-5.mx-auto
-              i.fa.fa-4x.fa-users.text-primary.mb-3.sr-icons
+              i.fa.fa-4x.fa-connectdevelop.text-primary.mb-3.sr-icons
               h3.mb-3= t('.connect_you')
               p.text-muted.mb-0= t('.connect_you_text')
           .col-lg-3.col-md-6.text-center
             .service-box.mt-5.mx-auto
-              i.fa.fa-4x.fa-line-chart.text-primary.mb-3.sr-icons
+              i.fa.fa-4x.fa-newspaper-o.text-primary.mb-3.sr-icons
               h3.mb-3= t('.up_to_date')
               p.text-muted.mb-0= t('.up_to_date_text')
           .col-lg-3.col-md-6.text-center
@@ -92,6 +94,77 @@ html lang="#{[:en, :he].include?(I18n.locale) ? I18n.locale.to_s : 'he'}" class=
               i.fa.fa-4x.fa-heart.text-primary.mb-3.sr-icons
               h3.mb-3= t('.made_with_love')
               p.text-muted.mb-0= t('.made_with_love_text')
+    - if I18n.locale == :he
+      section#hitechServices.bg-primary
+        .container
+          .row
+            .col-lg-12.text-center
+              h2.section-heading.text-white= t('.hitech_services')
+              hr.light.my-4/
+        .container
+          .row
+            .col-12
+              ul.list-group.text-faded.h5
+                li.list-group-item.bg-primary מתמחים וסטאז'רים לתקופת סטאז  בכל התחומים על מנת שיצברו ניסיון ויחסכו לכם בעלויות
+                li.list-group-item.bg-primary ניהול זמן אפקטיבי
+                li.list-group-item.bg-primary קשר עם משקיעים פרטיים וחברות הון
+                li.list-group-item.bg-primary תרגום
+                li.list-group-item.bg-primary צילום סרטוני תדמית לחברות היי טק
+                li.list-group-item.bg-primary CTO
+                li.list-group-item.bg-primary עורכי דין
+                li.list-group-item.bg-primary פיננסי
+                li.list-group-item.bg-primary ניתוח שוק כמו גוגל אנליטיקס
+                li.list-group-item.bg-primary שיווק פיתוח עסקי
+                li.list-group-item.bg-primary UX
+                li.list-group-item.bg-primary UI
+                li.list-group-item.bg-primary אוטומציה
+                li.list-group-item.bg-primary digital data campaigns
+                li.list-group-item.bg-primary לוגיסטיקה
+                li.list-group-item.bg-primary אסטרטגיה
+                li.list-group-item.bg-primary קופיריטר
+                li.list-group-item.bg-primary תוכן ושיווק
+                li.list-group-item.bg-primary Brand Creation
+                li.list-group-item.bg-primary עריכת פטנטים
+                li.list-group-item.bg-primary עריכת תוכן
+                li.list-group-item.bg-primary השכרת משרדים
+                li.list-group-item.bg-primary בית תוכנה
+                li.list-group-item.bg-primary דיזיין ספרינט.
+                li.list-group-item.bg-primary ערוצי תפוצה בחול
+    
+    - if I18n.locale == :he
+      section#realEstateServices.bg-white
+        .container
+          .row
+            .col-lg-12.text-center
+              h2.section-heading= t('.real_estate_services')
+              hr.my-4/
+        .container
+          .row
+            .col-12
+              ul.list-group.h5
+                li.list-group-item בתחום הנדלן אנחנו עושים שתפים בין תחומים שונים 
+                li.list-group-item מפקחי בניה, יזמים בתחום הנדלן, שמאים ועוד..
+                li.list-group-item יעוץ בטיחות אש
+                li.list-group-item ורישי עסקים
+                li.list-group-item תיווך מסחרי
+                li.list-group-item עיצוב פנים
+                li.list-group-item חקירות מבנים
+                li.list-group-item מנקות לבתים
+                li.list-group-item פאנג שוואי
+                li.list-group-item פתרונות תאורה
+                li.list-group-item קונסטרוציה
+                li.list-group-item אדריכלית עיצוב פנים 
+                li.list-group-item תכנון מבנים והגשת מסמכים לעיירה בתא
+                li.list-group-item ייעוץ משכנתאות 
+                li.list-group-item תיווך נדלן
+                li.list-group-item מתווכים
+                li.list-group-item קניית  מגרשים
+                li.list-group-item חברת תיווך שעוסקת במכירות נכנסים ביפו
+                li.list-group-item צילום לאדריכלות
+                li.list-group-item ועיצוב פנים 
+                li.list-group-item שמאות
+
+
     section#partners.bg-gray
       .container.text-center
         h2.mb-4= t('.our_partners')
@@ -153,6 +226,37 @@ html lang="#{[:en, :he].include?(I18n.locale) ? I18n.locale.to_s : 'he'}" class=
                 label for="textareaComments"  = t('.form_anything_else_you_would_like_us_to_know')
                 textarea#textareaComments.form-control name="comments" rows="3" 
               button.btn.btn-primary type="submit"  = t('.submit')
+    
+    - if I18n.locale == :he
+      section#faq.bg-gray
+        .container
+          .row
+            .col-lg-12.text-center
+              h2.section-heading= t('.faq')
+              hr.my-4/
+        .container
+          .row
+            .col-12
+              p 
+                strong מה אנחנו עושים בדיוק בתחום הקישור לשרות ?
+              p אנחנו מקבלים/מכירים חברה שיש לה קושי ואין לה איך לפתור זאת והיא מחפשת דרכים בעצמה והיא לא מוצאת -ואנחנו דואגים שהשרות יחזור עם הצעה אטרקטיבית
+              br/
+              br/
+              p 
+                strong מה אנחנו עושים בדיוק בתחום הקישור משקיעים?
+              p אנחנו מקבלים/מכירים חברה שמחפשת משקיעים פרטי/חברה אנחנו שולחים אליהם דרישות להגשת בקשה לחברת משקיעים ואנחנו שולחים להם
+              br/
+              br/
+              p 
+                strong מה אנחנו עושים בדיוק בתחום הקישור של הסטזרים בכל תחומי היי טק ?
+              p אנחנו מוצאים סטזרים שסיימו לימודים ומחפשים להשתלב בתחום היי טק בוחנים אותם ושולחים אותם לחברות היי טק  להתמחות
+              br/
+              br/
+              p 
+                strong איך זה עובד בתחום הנדלן ?
+              p אנחנו מכירים חברה שרוצה שתפ ומתחילים איתה תהליך לראות מי הכי רלוונטי אליה נפגשים איתה במידה וכן דואגים למערכת שתיתן לידים ל2 הצדדים
+
+            
     /! Bootstrap core JavaScript
     script src="vendor/jquery/jquery.min.js" 
     script src="vendor/bootstrap/js/bootstrap.bundle.min.js" 

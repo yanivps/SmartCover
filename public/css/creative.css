@@ -298,11 +298,31 @@ html.rtl {
   direction: rtl;
 }
 
+.ltr {
+  direction: ltr;
+}
+
 #contact-us-success-alert {
   z-index: 1000;
 }
 
 button {
   cursor: pointer;
+}
+
+#secondary-header {
+  font-size: 1.4em;
+}
+
+#hitechServices li, #realEstateServices li {
+  border: 0;
+}
+
+html.rtl #hitechServices ul, html.rtl #realEstateServices ul {
+  text-align: right;
+}
+
+html.rtl #faq p {
+  text-align: right;
 }
 /*# sourceMappingURL=creative.css.map */
